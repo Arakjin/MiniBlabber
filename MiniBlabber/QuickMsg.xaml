@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MiniBlabber.QuickMsg">
+    <ContentPage.Content>
+        <Grid Margin="10,10,10,10" VerticalOptions="FillAndExpand">
+            <!-- Row 0 -->
+            <ImageButton x:Name="Btn_Yes" Source="Yes.png" Style="{StaticResource ImgBtn}" BackgroundColor="Green" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Clicked="Btn_Yes_Clicked" Pressed="Btn_Yes_Pressed"/>
+            <ImageButton x:Name="Btn_No" Source="No.png" Style="{StaticResource ImgBtn}" BackgroundColor="Red" Grid.Column="0" Grid.Row="1"  Grid.ColumnSpan="2" Clicked="Btn_No_Clicked" Pressed="Btn_No_Pressed"/>
+            <Label Text="Pikaviestit" FontSize="Medium" HorizontalOptions="Center" VerticalOptions="Center" Grid.ColumnSpan="8" Grid.Column="2" Grid.RowSpan="2" Grid.Row="0"/>
+
+            <!-- Row 1 -->
+            <Button x:Name="Btn_Quick_1" Text="Q" Style="{StaticResource letter}" Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="2" Clicked="Btn_Quick_1_Clicked"/>
+            <Button x:Name="Btn_Quick_2" Text="T" Style="{StaticResource letter}" Grid.Column="4" Grid.ColumnSpan="4" Grid.Row="2" Clicked="Btn_Quick_2_Clicked"/>
+            <Button x:Name="Btn_Quick_3" Text="O" Style="{StaticResource letter}" Grid.Column="8" Grid.ColumnSpan="4" Grid.Row="2" Clicked="Btn_Quick_3_Clicked"/>
+
+            <!-- Row 2 -->
+            <Button x:Name="Btn_Quick_4" Text="Q" Style="{StaticResource letter}" Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="3" Clicked="Btn_Quick_4_Clicked"/>
+            <Button x:Name="Btn_Quick_5" Text="T" Style="{StaticResource letter}" Grid.Column="4" Grid.ColumnSpan="4" Grid.Row="3" Clicked="Btn_Quick_5_Clicked"/>
+            <Button x:Name="Btn_Quick_6" Text="O" Style="{StaticResource letter}" Grid.Column="8" Grid.ColumnSpan="4" Grid.Row="3" Clicked="Btn_Quick_6_Clicked"/>
+
+            <!-- Row 3 -->
+            <Button x:Name="Btn_Quick_7" Text="Q" Style="{StaticResource letter}" Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="4" Clicked="Btn_Quick_7_Clicked"/>
+            <Button x:Name="Btn_Quick_8" Text="T" Style="{StaticResource letter}" Grid.Column="4" Grid.ColumnSpan="4" Grid.Row="4" Clicked="Btn_Quick_8_Clicked"/>
+            <Button x:Name="Btn_Quick_9" Text="O" Style="{StaticResource letter}" Grid.Column="8" Grid.ColumnSpan="4" Grid.Row="4" Clicked="Btn_Quick_9_Clicked"/>
+
+            <!-- Row 4 -->
+            <Button x:Name="Btn_Quick_10" Text="Q" Style="{StaticResource letter}" Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="5" Clicked="Btn_Quick_10_Clicked"/>
+            <Button x:Name="Btn_Quick_11" Text="T" Style="{StaticResource letter}" Grid.Column="4" Grid.ColumnSpan="4" Grid.Row="5" Clicked="Btn_Quick_11_Clicked"/>
+            <Button x:Name="Btn_Quick_12" Text="O" Style="{StaticResource letter}" Grid.Column="8" Grid.ColumnSpan="4" Grid.Row="5" Clicked="Btn_Quick_12_Clicked"/>
+            <!-- Row 5-->
+            <Button x:Name="Btn_Quick_13" Text="Q" Style="{StaticResource letter}" Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="6" Clicked="Btn_Quick_13_Clicked"/>
+            <Button x:Name="Btn_Quick_14" Text="T" Style="{StaticResource letter}" Grid.Column="4" Grid.ColumnSpan="4" Grid.Row="6" Clicked="Btn_Quick_14_Clicked"/>
+            <Button x:Name="Btn_Enter" Text="Kirjoita" Style="{StaticResource letter}" BackgroundColor="Yellow" Grid.Column="8" Grid.Row="6" Grid.ColumnSpan="4" Clicked="Btn_Enter_Clicked"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

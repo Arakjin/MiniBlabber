@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:effects="clr-namespace:Xamarin.KeyboardHelper;assembly=Xamarin.KeyboardHelper"
+             mc:Ignorable="d"
+             x:Class="MiniBlabber.EditorKeyboard">
+    <ContentPage.Content>
+        <Grid Margin="10,10,10,10" VerticalOptions="FillAndExpand" >
+
+            <!-- Row 0 -->
+            <Editor x:Name="TextField1" Text="" FontSize="30" BackgroundColor="White" Grid.ColumnSpan="10" Grid.RowSpan="2" Grid.Column="0" Grid.Row="0" effects:KeyboardEffect.RequestFocus="True" effects:KeyboardEffect.EnableKeyboard="False">
+                <Editor.Effects>
+                    <effects:KeyboardEnableEffect/>
+                </Editor.Effects>
+            </Editor>
+            <ImageButton x:Name="Btn_Save" Source="Edit.png" Style="{StaticResource ImgBtn}" BackgroundColor="Green" Grid.Column="10" Grid.RowSpan="2" Grid.ColumnSpan="2" Grid.Row="0" Clicked="Btn_Save_Clicked"/>
+
+            <!-- Row 1 -->
+            <Button x:Name="Btn_1" Text="1" Style="{StaticResource letterRow1}" Grid.Column="0" Grid.Row="2" Clicked="Btn_1_Clicked"/>
+            <Button x:Name="Btn_2" Text="2" Style="{StaticResource letterRow1}" Grid.Column="1" Grid.Row="2" Clicked="Btn_2_Clicked"/>
+            <Button x:Name="Btn_3" Text="3" Style="{StaticResource letterRow1}" Grid.Column="2" Grid.Row="2" Clicked="Btn_3_Clicked"/>
+            <Button x:Name="Btn_4" Text="4" Style="{StaticResource letterRow1}" Grid.Column="3" Grid.Row="2" Clicked="Btn_4_Clicked"/>
+            <Button x:Name="Btn_5" Text="5" Style="{StaticResource letterRow1}" Grid.Column="4" Grid.Row="2" Clicked="Btn_5_Clicked"/>
+            <Button x:Name="Btn_6" Text="6" Style="{StaticResource letterRow1}" Grid.Column="5" Grid.Row="2" Clicked="Btn_6_Clicked"/>
+            <Button x:Name="Btn_7" Text="7" Style="{StaticResource letterRow1}" Grid.Column="6" Grid.Row="2" Clicked="Btn_7_Clicked"/>
+            <Button x:Name="Btn_8" Text="8" Style="{StaticResource letterRow1}" Grid.Column="7" Grid.Row="2" Clicked="Btn_8_Clicked"/>
+            <Button x:Name="Btn_9" Text="9" Style="{StaticResource letterRow1}" Grid.Column="8" Grid.Row="2" Clicked="Btn_9_Clicked"/>
+            <Button x:Name="Btn_0" Text="0" Style="{StaticResource letterRow1}" Grid.Column="9" Grid.Row="2" Clicked="Btn_0_Clicked"/>
+            <ImageButton x:Name="Btn_Back" Source="Backspace.png" Style="{StaticResource ImgBtn}" BackgroundColor="Yellow" Grid.Column="10" Grid.Row="2" Grid.ColumnSpan="2" Clicked="Btn_Back_Clicked"/>
+
+            <!-- Row 2 -->
+            <Button x:Name="Btn_Q" Text="Q" Style="{StaticResource letter}" Grid.Column="0" Grid.Row="3" Clicked="Btn_Q_Clicked"/>
+            <Button x:Name="Btn_W" Text="W" Style="{StaticResource letter}" Grid.Column="1" Grid.Row="3" Clicked="Btn_W_Clicked"/>
+            <Button x:Name="Btn_E" Text="E" Style="{StaticResource letter}" Grid.Column="2" Grid.Row="3" Clicked="Btn_E_Clicked"/>
+            <Button x:Name="Btn_R" Text="R" Style="{StaticResource letter}" Grid.Column="3" Grid.Row="3" Clicked="Btn_R_Clicked"/>
+            <Button x:Name="Btn_T" Text="T" Style="{StaticResource letter}" Grid.Column="4" Grid.Row="3" Clicked="Btn_T_Clicked"/>
+            <Button x:Name="Btn_Y" Text="Y" Style="{StaticResource letter}" Grid.Column="5" Grid.Row="3" Clicked="Btn_Y_Clicked"/>
+            <Button x:Name="Btn_U" Text="U" Style="{StaticResource letter}" Grid.Column="6" Grid.Row="3" Clicked="Btn_U_Clicked"/>
+            <Button x:Name="Btn_I" Text="I" Style="{StaticResource letter}" Grid.Column="7" Grid.Row="3" Clicked="Btn_I_Clicked"/>
+            <Button x:Name="Btn_O" Text="O" Style="{StaticResource letter}" Grid.Column="8" Grid.Row="3" Clicked="Btn_O_Clicked"/>
+            <Button x:Name="Btn_P" Text="P" Style="{StaticResource letter}" Grid.Column="9" Grid.Row="3" Clicked="Btn_P_Clicked"/>
+            <Button x:Name="Btn_AO" Text="Å" Style="{StaticResource letter}" Grid.Column="10" Grid.Row="3" Clicked="Btn_AO_Clicked"/>
+            <ImageButton x:Name="Btn_DelWord" Source="DelWord.png" Style="{StaticResource ImgBtn}" BackgroundColor="Yellow" Grid.Column="11" Grid.Row="3" Clicked="Btn_DelWord_Clicked"/>
+
+            <!-- Row 3 -->
+            <Button x:Name="Btn_A" Text="A" Style="{StaticResource letterRow2}" Grid.Column="0" Grid.Row="4" Clicked="Btn_A_Clicked"/>
+            <Button x:Name="Btn_S" Text="S" Style="{StaticResource letterRow2}" Grid.Column="1" Grid.Row="4" Clicked="Btn_S_Clicked"/>
+            <Button x:Name="Btn_D" Text="D" Style="{StaticResource letterRow2}" Grid.Column="2" Grid.Row="4" Clicked="Btn_D_Clicked"/>
+            <Button x:Name="Btn_F" Text="F" Style="{StaticResource letterRow2}" Grid.Column="3" Grid.Row="4" Clicked="Btn_F_Clicked"/>
+            <Button x:Name="Btn_G" Text="G" Style="{StaticResource letterRow2}" Grid.Column="4" Grid.Row="4" Clicked="Btn_G_Clicked"/>
+            <Button x:Name="Btn_H" Text="H" Style="{StaticResource letterRow2}" Grid.Column="5" Grid.Row="4" Clicked="Btn_H_Clicked"/>
+            <Button x:Name="Btn_J" Text="J" Style="{StaticResource letterRow2}" Grid.Column="6" Grid.Row="4" Clicked="Btn_J_Clicked"/>
+            <Button x:Name="Btn_K" Text="K" Style="{StaticResource letterRow2}" Grid.Column="7" Grid.Row="4" Clicked="Btn_K_Clicked"/>
+            <Button x:Name="Btn_L" Text="L" Style="{StaticResource letterRow2}" Grid.Column="8" Grid.Row="4" Clicked="Btn_L_Clicked"/>
+            <Button x:Name="Btn_OE" Text="Ö" Style="{StaticResource letterRow2}" Grid.Column="9" Grid.Row="4" Clicked="Btn_OE_Clicked"/>
+            <Button x:Name="Btn_AE" Text="Ä" Style="{StaticResource letterRow2}" Grid.Column="10" Grid.Row="4" Clicked="Btn_AE_Clicked"/>
+
+            <!-- Row 4 -->
+            <ImageButton x:Name="Btn_Clear" Source="Trashcan.png" Style="{StaticResource ImgBtn}" BackgroundColor="Red" Grid.Column="0" Grid.Row="5" Clicked="Btn_Clear_Clicked"/>
+            <Button x:Name="Btn_Z" Text="Z" Style="{StaticResource letter}" Grid.Column="1" Grid.Row="5" Clicked="Btn_Z_Clicked"/>
+            <Button x:Name="Btn_X" Text="X" Style="{StaticResource letter}" Grid.Column="2" Grid.Row="5" Clicked="Btn_X_Clicked"/>
+            <Button x:Name="Btn_C" Text="C" Style="{StaticResource letter}" Grid.Column="3" Grid.Row="5" Clicked="Btn_C_Clicked"/>
+            <Button x:Name="Btn_V" Text="V" Style="{StaticResource letter}" Grid.Column="4" Grid.Row="5" Clicked="Btn_V_Clicked"/>
+            <Button x:Name="Btn_B" Text="B" Style="{StaticResource letter}" Grid.Column="5" Grid.Row="5" Clicked="Btn_B_Clicked"/>
+            <Button x:Name="Btn_N" Text="N" Style="{StaticResource letter}" Grid.Column="6" Grid.Row="5" Clicked="Btn_N_Clicked"/>
+            <Button x:Name="Btn_M" Text="M" Style="{StaticResource letter}" Grid.Column="7" Grid.Row="5" Clicked="Btn_M_Clicked"/>
+            <Button x:Name="Btn_Comma" Text="," Style="{StaticResource letter}" Grid.Column="8" Grid.Row="5" Clicked="Btn_Comma_Clicked"/>
+            <Button x:Name="Btn_Dot" Text="." Style="{StaticResource letter}" Grid.Column="9" Grid.Row="5" Clicked="Btn_Dot_Clicked"/>
+            <!-- Row 5-->
+            <Button x:Name="Btn_toggle" Text="Caps Lock" Style="{StaticResource letter}" BackgroundColor="Yellow" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="6" Clicked="Btn_toggle_Clicked"/>
+            <Button x:Name="Btn_Space" Text="Välilyönti" Style="{StaticResource letter}" BackgroundColor="LightYellow" Grid.Column="3" Grid.ColumnSpan="6" Grid.Row="6" Clicked="Btn_Space_Clicked"/>
+            <Button x:Name="Btn_Enter" Text="Pikaviestit" Style="{StaticResource letter}" BackgroundColor="Yellow" Grid.Column="9" Grid.Row="6" Grid.ColumnSpan="3" Clicked="Btn_Enter_Clicked"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
